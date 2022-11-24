@@ -10,5 +10,5 @@ At first, the following libraries should be installed according to these command
 
 If you are using M series Macs, use the following commands to install the tensorflow library. Because after installing in the usual way, when running the script, Python will crash your system
 
-```python -m pip install tensorflow-macos```\
+```python3 -m pip install tensorflow-macos```\
 ```pip install tensorflow-metal```
