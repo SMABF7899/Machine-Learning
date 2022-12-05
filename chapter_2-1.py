@@ -1,4 +1,5 @@
 import numpy as np
+from sklearn.naive_bayes import BernoulliNB
 
 X_train = np.array([
     [0, 1, 1],
@@ -66,3 +67,10 @@ def get_posterior(X, prior, likelihood):
 
 posterior = get_posterior(X_test, prior, likelihood)
 print("Posterior : \n", posterior)
+
+clf = BernoulliNB(alpha=1.0, fit_prior=True)
+clf.fit(X_train, Y_train)
+pred_prob = clf.predict_proba(X_test)
+print('[scikit-learn] Predicted probabilities:\n', pred_prob)
+pred = clf.predict(X_test)
+print('[scikit-learn] Prediction:', pred)
