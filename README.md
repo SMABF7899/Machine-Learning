@@ -12,3 +12,5 @@ If you are using M series Macs, use the following commands to install the tensor
 
 ```python3 -m pip install tensorflow-macos```\
 ```pip install tensorflow-metal```
+
+for download ```ratings.dat``` uss [this website](https://grouplens.org/datasets/movielens/1m/).
